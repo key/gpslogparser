@@ -4,7 +4,7 @@ from app import app
 
 DEBUG = True
 SECRET_KEY = 'fugahoge'
-CSRF_ENABLED = False
+WTF_CSRF_ENABLED = False
 
 
 app.config.from_object(__name__)
