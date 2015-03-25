@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
-import unittest
 import os
+import unittest
 
 
 class ViewTestCase(unittest.TestCase):
     def setUp(self):
         from app import app
 
-        app.config['CSRF_ENABLED'] = False
-        app.config['SECRET_KEY'] = 'foobar'
+        app.config['WTF_CSRF_ENABLED'] = False
 
         self.client = app.test_client()
+        self.logfile = os.path.join(os.path.dirname(__file__), 'tests', 'test.fit')
 
     def test_index(self):
         result = self.client.get('/')
@@ -20,7 +20,12 @@ class ViewTestCase(unittest.TestCase):
         result = self.client.get('/parse')
         assert result.status_code == 405
 
-        result = self.client.post('/parse')
+        result = self.client.post(
+            '/parse',
+            data={
+                'logfile': open(self.logfile, 'rb'),
+            }
+        )
         assert result.status_code == 200
 
 
