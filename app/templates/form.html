@@ -1,0 +1,11 @@
+<html>
+<body>
+<form action="{{ url_for('parser') }}" method="post" enctype="multipart/form-data">
+  {{ form.hidden_tag() }}
+  {{ form.logfile.label }} {{ form.logfile }}
+  {{ form.fields.label }} {{ form.fields }}
+  {{ form.format.label }} {{ form.format }}
+  <input type="submit">
+</form>
+</body>
+</html>

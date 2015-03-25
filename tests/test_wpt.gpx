@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1">
+  <wpt lat="39.0209638888889" lon="141.622163611111">
+    <ele>4.9</ele>
+  </wpt>
+  <wpt lat="39.0210269444444" lon="141.62209">
+    <ele>5.5</ele>
+  </wpt>
+</gpx>
