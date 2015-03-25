@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from gevent.wsgi import WSGIServer
 from app import app
 
 
@@ -8,4 +9,6 @@ WTF_CSRF_ENABLED = False
 
 
 app.config.from_object(__name__)
-app.run(host='0.0.0.0', debug=DEBUG)
+
+http_server = WSGIServer(('', 5000), app)
+http_server.serve_forever()
