@@ -1,7 +1,14 @@
-# About GPSLogParser
+# About
 
 This module provides feature for parsing gps log file.
 Posting a GPS files via HTTP, you will be able to parse the GPS log file.
+
+Supported GPS files:
+
+* FIT (Record)
+* GPX Waypoint
+* GPX Trackpoint
+
 You can get parsed data with specified format. Supported formats see below.
 
 * CSV
@@ -21,7 +28,7 @@ pip install -r requirements.txt
 python run.py
 ```
 
-## parse file
+## parse gps log file
 
 ```
 curl \
