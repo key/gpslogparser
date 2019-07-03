@@ -7,7 +7,7 @@ Werkzeug==0.15.4
 gevent==1.0.1
 greenlet==0.4.15
 isodate==0.5.1
-itsdangerous==0.24
+itsdangerous==1.1.0
 pytz==2015.2
 wsgiref==0.1.2
 -e git+https://github.com/dtcooper/python-fitparse.git@ng#egg=fitparse
