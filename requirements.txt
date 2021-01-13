@@ -5,7 +5,7 @@ MarkupSafe==1.1.1
 WTForms==2.0.2
 Werkzeug==0.16.0
 gevent==20.12.1
-greenlet==0.4.15
+greenlet==1.0.0
 isodate==0.6.0
 itsdangerous==1.1.0
 pytz==2019.3
