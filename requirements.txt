@@ -4,7 +4,7 @@ Jinja2==2.11.3
 MarkupSafe==1.1.1
 WTForms==2.0.2
 Werkzeug==0.16.0
-gevent==20.12.1
+gevent==21.1.2
 greenlet==0.4.15
 isodate==0.6.0
 itsdangerous==1.1.0
